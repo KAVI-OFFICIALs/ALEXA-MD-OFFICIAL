@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+}
+
+.container {
+  text-align: center;
+}
+
+.neon-text {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 
+    0 0 5px #0ff,
+    0 0 10px #0ff,
+    0 0 20px #0ff,
+    0 0 40px #0ff,
+    0 0 80px #0ff;
+  animation: neonGlow 2s infinite alternate;
+}
+
+@keyframes neonGlow {
+  0% {
+    text-shadow: 
+      0 0 5px #0ff,
+      0 0 10px #0ff,
+      0 0 20px #0ff,
+      0 0 40px #0ff,
+      0 0 80px #0ff;
+  }
+  50% {
+    text-shadow: 
+      0 0 5px #f0f,
+      0 0 10px #f0f,
+      0 0 20px #f0f,
+      0 0 40px #f0f,
+      0 0 80px #f0f;
+  }
+  100% {
+    text-shadow: 
+      0 0 5px #ff0,
+      0 0 10px #ff0,
+      0 0 20px #ff0,
+      0 0 40px #ff0,
+      0 0 80px #ff0;
+  }
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1.2rem;
+  color: black;
+  background: linear-gradient(45deg, #ff0, #0ff, #f0f);
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: linear-gradient(45deg, #0ff, #f0f, #ff0);
+  color: white;
+  transform: scale(1.1);
+}
+
+footer {
+  margin-top: 20px;
+}
+
+.credits {
+  font-size: 0.9rem;
+  color: #aaa;
+}
